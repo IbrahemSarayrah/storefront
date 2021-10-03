@@ -1,4 +1,4 @@
-# resty
+# storefront
 
 ## LAB - 36
 
@@ -6,11 +6,11 @@
 
 ### LINKS
 
-* LAB - 31 pull request : []()
+* LAB - 36 pull request : [https://github.com/IbrahemSarayrah/storefront/pull/1](https://github.com/IbrahemSarayrah/storefront/pull/1)
 
-* LAB - 31 [codesandbox.io deployment code]()
+* LAB - 36 [codesandbox.io deployment code](https://codesandbox.io/s/condescending-allen-xstp4)
 
-* LAB - 31 [codesandbox.io deployment link]()
+* LAB - 36 [codesandbox.io deployment link](https://xstp4.csb.app/)
 
 ### Running the app
 
@@ -20,4 +20,4 @@
 
 #### UML
 
-![lab-31](./UML/lab-36.png)
+![lab-36](./UML/lab-36.png)
