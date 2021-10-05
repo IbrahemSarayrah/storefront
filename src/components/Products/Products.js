@@ -1,4 +1,6 @@
-import { connect } from "react-redux";
+import { connect, useSelector, useDispatch } from "react-redux";
+import { useEffect } from 'react'
+import { getProducts } from '../../store/productAPI';
 
 import { Grid, Card, CardMedia, CardContent, Typography, Button } from '@material-ui/core';
 
@@ -6,6 +8,16 @@ import { addToCart } from '../../store/cart'
 
 
 const Product = props => {
+
+    const dispatch = useDispatch();
+
+    const products = useSelector(state => state.products);
+
+    useEffect(() => {
+        dispatch(getProducts());
+    }, [dispatch]);
+
+
     return (
         <div className="productGrid">
             <Grid
@@ -14,7 +26,7 @@ const Product = props => {
                 justifyContent="space-evenly"
                 alignItems="center"
             >
-                {props.products.map((items, idx) => {
+                {products.map((items, idx) => {
                     if (props.activeCategory === items.category)
                         return (
                             <Card key={idx} elevation={3}>
@@ -35,11 +47,9 @@ const Product = props => {
             </Grid>
         </div>
     )
-
 }
 
 const mapStateToProps = state => ({
-    products: state.store.product,
     activeCategory: state.store.activeCategory
 });
 
