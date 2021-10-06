@@ -34,11 +34,11 @@
 
 ### LAB - 39
 
-* LAB - 39 pull request : []()
+* LAB - 39 pull request : [https://github.com/IbrahemSarayrah/storefront/pull/6](https://github.com/IbrahemSarayrah/storefront/pull/6)
 
-* LAB - 39 [codesandbox.io deployment code]()
+* LAB - 39 [codesandbox.io deployment code](https://codesandbox.io/s/hopeful-waterfall-8ubyb?file=/src/store/cart.js)
 
-* LAB - 39 [codesandbox.io deployment link]()
+* LAB - 39 [codesandbox.io deployment link](https://8ubyb.csb.app/)
 
 * LAB - 39 [Backend-github](https://github.com/IbrahemSarayrah/storeAPI)
 
