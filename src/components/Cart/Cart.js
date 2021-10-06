@@ -7,16 +7,14 @@ const Cart = props => {
     return (
         <Card className="cart" elevation={3}>
             <p>Cart Items:</p>
-            {props.cartItems.map(item => {
+            {props.cartItems.map((item,idx) => {
                 return (
-                    <>
-                        <ul>
+                        <ul key={idx}>
                             <li>
                                 <Typography component="h2"> {item.name} </Typography>
-                                <Button onClick={() => props.removeFromCart(item)}>Remove</Button>
+                                <Button onClick={() => props.removeFromCart(item.name)}>Remove</Button>
                             </li>
                         </ul>
-                    </>
                 )
             })}
         </Card>
